@@ -1,0 +1,3 @@
+select count(*)
+from rental r 
+where r.rental_date + (14 * interval '1 day')> r.return_date
